@@ -56,7 +56,6 @@ fun MessageCard(msg: Message) {
                 .size(40.dp)
                 .clip(CircleShape)
                 .border(1.5.dp, MaterialTheme.colors.secondary, CircleShape)
-                .align(Alignment.CenterVertically)
         )
 
         Spacer(modifier = Modifier.width(8.dp))
@@ -79,7 +78,8 @@ fun MessageCard(msg: Message) {
 @Preview(
     uiMode = Configuration.UI_MODE_NIGHT_YES,
     showBackground = true,
-    name = "Dark Mode"
+    name = "Dark Mode",
+    showSystemUi = true
 )
 @Composable
 fun DefaultPreview() {
